@@ -26,8 +26,22 @@ const TechnicianTable = (props) => {
             <td>{technician.boiler_specialty}</td>
 
             <td>
-              <button className='button muted-button'>Edit</button>
-              <button className='button muted-button'>Delete</button>
+              <button
+                className='button muted-button'
+                onClick={() => {
+                  props.editRow(technician);
+                }}
+              >
+                Edit
+              </button>
+              <button
+                className='button muted-button'
+                onClick={() => {
+                  props.deleteTechnician(technician.id);
+                }}
+              >
+                Delete
+              </button>
             </td>
           </tr>
         ))}
