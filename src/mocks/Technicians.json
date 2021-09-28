@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "first_name": "George",
+    "last_name": "Bow",
+    "phone_number": "163-322-5265",
+    "dni": 37000643,
+    "boiler_specialty": "A/D"
+  },
+  {
+    "id": 2,
+    "first_name": "Oscar",
+    "last_name": "Peaden",
+    "phone_number": "381-205-7536",
+    "dni": 37000643,
+    "boiler_specialty": "B"
+  },
+  {
+    "id": 3,
+    "first_name": "John",
+    "last_name": "Goodswen",
+    "phone_number": "151-732-9124",
+    "dni": 37000643,
+    "boiler_specialty": "A/B"
+  },
+  {
+    "id": 4,
+    "first_name": "Michael",
+    "last_name": "Lowless",
+    "phone_number": "880-707-2296",
+    "dni": 37000643,
+    "boiler_specialty": "A/D"
+  },
+  {
+    "id": 5,
+    "first_name": "Peter",
+    "last_name": "Whistan",
+    "phone_number": "575-520-9533",
+    "dni": 37000643,
+    "boiler_specialty": "A/B/D"
+  }
+]

@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import AddTechnician from './components/AddTechnician';
+import TechnicianTable from './components/TechnicianTable';
+import Technicians from './mocks/Technicians.json';
 
-function App() {
+const App = () => {
+  //State
+  const [technicians, setTechnicians] = useState(Technicians);
+
+  //Add technician
+  const addTechnician = (technician) => {
+    technician.id = technicians.length + 1;
+
+    setTechnicians([...technicians, technician]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='container'>
+      <h1>Technicians</h1>
+      <div className='flex-row'>
+        <div className='flex-large'>
+          <h2>Add technician</h2>
+          <AddTechnician addTechnician={addTechnician} />
+        </div>
+        <div className='flex-large'>
+          <h2>View technicians</h2>
+
+          <TechnicianTable technicians={technicians} />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
